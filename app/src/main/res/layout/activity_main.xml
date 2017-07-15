@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tourguideversailles.MainActivity">
+
+    <LinearLayout style="@style/HomeLinearLayout">
+
+        <TextView
+            android:id="@+id/HomeHeader"
+            style="@style/HomeHeader"
+            android:text="@string/home_header"/>
+
+        <LinearLayout
+            android:id="@+id/NavBar"
+            style="@style/NavBar">
+
+            <ImageView
+                android:id="@+id/ic_home"
+                style="@style/navBarIcons"
+                android:src="@mipmap/ic_home_white_24dp" />
+
+            <ImageView
+                android:id="@+id/ic_monuments"
+                style="@style/navBarIcons"
+                android:src="@mipmap/ic_account_balance_white_24dp" />
+
+            <ImageView
+                android:id="@+id/ic_parks"
+                style="@style/navBarIcons"
+                android:src="@mipmap/ic_local_florist_white_24dp" />
+
+            <ImageView
+                android:id="@+id/ic_events"
+                style="@style/navBarIcons"
+                android:src="@mipmap/ic_event_white_24dp" />
+
+            <ImageView
+                android:id="@+id/ic_restaurants"
+                style="@style/navBarIcons"
+                android:src="@mipmap/ic_restaurant_white_24dp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/HomePhoto"
+            style="@style/HomePhoto"
+            android:src="@drawable/chateau" />
+
+        <TextView
+            android:id="@+id/HomeText"
+            style="@style/HomeText" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
