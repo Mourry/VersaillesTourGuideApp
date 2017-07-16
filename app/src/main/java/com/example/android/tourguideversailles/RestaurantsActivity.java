@@ -26,7 +26,7 @@ public class RestaurantsActivity extends AppCompatActivity {
         TextView header = (TextView) findViewById(R.id.Header);
 
         // Set the correct category name
-        header.setText("Restaurants");
+        header.setText(R.string.Restaurants);
 
         // Find the View that shows the home category
         ImageView home = (ImageView) findViewById(R.id.ic_home);
@@ -103,7 +103,6 @@ public class RestaurantsActivity extends AppCompatActivity {
         venues.add(new Venue(R.string.flottille_tittle, R.string.flottille_text, R.drawable.flotille));
         venues.add(new Venue(R.string.montbauron_tittle, R.string.montbauron_text, R.drawable.montbauron));
         venues.add(new Venue(R.string.trianon_tittle, R.string.tianon_text, R.drawable.trianon));
-
 
 
         // Create an {@link VenuesAdapter}, whose data source is a list of

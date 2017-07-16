@@ -23,8 +23,7 @@ public class Venue {
     * @param vText is the corresponding text of the Venue
     * @param image is drawable reference ID that corresponds to the venue
             * */
-    public Venue(int vTittle, int vText, int imageResourceId)
-    {
+    public Venue(int vTittle, int vText, int imageResourceId) {
         mTittleItem = vTittle;
         mTextItem = vText;
         mImageResourceId = imageResourceId;
@@ -44,6 +43,7 @@ public class Venue {
     public int getVenueText() {
         return mTextItem;
     }
+
     /**
      * Get the image resource ID
      */

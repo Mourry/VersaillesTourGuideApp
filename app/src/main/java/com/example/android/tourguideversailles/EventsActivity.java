@@ -26,7 +26,7 @@ public class EventsActivity extends AppCompatActivity {
         TextView header = (TextView) findViewById(R.id.Header);
 
         // Set the correct category name
-        header.setText("Events and Activities");
+        header.setText(R.string.Events);
 
         // Find the View that shows the home category
         ImageView home = (ImageView) findViewById(R.id.ic_home);
@@ -103,8 +103,6 @@ public class EventsActivity extends AppCompatActivity {
         venues.add(new Venue(R.string.nocturne_tittle, R.string.nocturne_text, R.drawable.nocturne));
         venues.add(new Venue(R.string.boat_tittle, R.string.boat_text, R.drawable.boat));
         venues.add(new Venue(R.string.bartabas_tittle, R.string.bartabas_text, R.drawable.bartabas));
-
-
 
 
         // Create an {@link VenuesAdapter}, whose data source is a list of

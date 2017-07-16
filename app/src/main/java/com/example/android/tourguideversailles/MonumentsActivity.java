@@ -1,14 +1,14 @@
 package com.example.android.tourguideversailles;
 
-        import android.content.Intent;
-        import android.os.Bundle;
-        import android.support.v7.app.AppCompatActivity;
-        import android.view.View;
-        import android.widget.ImageView;
-        import android.widget.ListView;
-        import android.widget.TextView;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.TextView;
 
-        import java.util.ArrayList;
+import java.util.ArrayList;
 
 /**
  * {@link MonumentsActivity} shows a list of Monuments in Versailles.
@@ -25,13 +25,13 @@ public class MonumentsActivity extends AppCompatActivity {
         TextView header = (TextView) findViewById(R.id.Header);
 
         // Set the correct category name
-        header.setText("Monuments");
+        header.setText(R.string.Monuments);
 
         // Find the View that shows the home category
         ImageView home = (ImageView) findViewById(R.id.ic_home);
 
         // Set a click listener on that View
-       home.setOnClickListener(new View.OnClickListener() {
+        home.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the monuments category is clicked on.
             @Override
             public void onClick(View view) {
@@ -104,7 +104,6 @@ public class MonumentsActivity extends AppCompatActivity {
         venues.add(new Venue(R.string.Senteur_tittle, R.string.Senteur_text, R.drawable.senteurs));
         venues.add(new Venue(R.string.Hotel_tittle, R.string.Hotel_text, R.drawable.hotel));
         venues.add(new Venue(R.string.Jeu_tittle, R.string.Jeu_text, R.drawable.salle));
-
 
 
         // Create an {@link VenuesAdapter}, whose data source is a list of
